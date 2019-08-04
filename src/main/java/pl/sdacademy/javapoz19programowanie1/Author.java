@@ -1,5 +1,7 @@
 package pl.sdacademy.javapoz19programowanie1;
 
+import java.util.Objects;
+
 public class Author {
     //first name, lastname, birthyear, nation(enum)
     private String firstName;
@@ -58,5 +60,21 @@ public class Author {
                 ", birthYear=" + birthYear +
                 ", nation=" + nation +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Author)) return false;
+        Author author = (Author) o;
+        return birthYear == author.birthYear &&
+                Objects.equals(firstName, author.firstName) &&
+                Objects.equals(lastName, author.lastName) &&
+                nation == author.nation;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(firstName, lastName, birthYear, nation);
     }
 }
