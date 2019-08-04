@@ -1,5 +1,7 @@
 package pl.sdacademy.javapoz19programowanie1.books;
 
+import pl.sdacademy.javapoz19programowanie1.Nation;
+
 import java.util.Scanner;
 
 public class BooksStart {
@@ -35,7 +37,8 @@ public class BooksStart {
             int decision = views.authorsMenu(authorsRepository.findAll());
             switch(decision){
                 case 1:
-                    //TODO
+                    Nation nation = views.getNation();
+                    break;
                 default:
                     flag = false;
             }

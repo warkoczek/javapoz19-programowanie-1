@@ -18,6 +18,13 @@ public class InMemoryAuthorsRepository implements AuthorsRepository {
         return null;
     }
 
+    @Override
+    public List<Author> findByNation(Nation nation) {
+        //TODO
+        return null;
+    }
+
+
     private void init() {
 
                authors.add(new Author("Stephen", "King", 1947, Nation.USA));
