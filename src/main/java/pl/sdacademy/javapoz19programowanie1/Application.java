@@ -1,8 +1,8 @@
 package pl.sdacademy.javapoz19programowanie1;
 
-import java.util.*;
+import pl.sdacademy.javapoz19programowanie1.books.Author;
 
-import static java.util.Arrays.asList;
+import java.util.*;
 
 public class Application {
     public static void main(String[] args) {
