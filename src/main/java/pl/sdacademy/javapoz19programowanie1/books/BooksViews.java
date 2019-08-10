@@ -1,7 +1,5 @@
 package pl.sdacademy.javapoz19programowanie1.books;
 
-import pl.sdacademy.javapoz19programowanie1.Nation;
-
 import java.util.List;
 import java.util.Scanner;
 
@@ -24,7 +22,7 @@ public class BooksViews {
     }
 
     public Nation getNation(){
-        String nationAsString = scanner.nextLine();
+        String nationAsString = scanner.nextLine().trim();
         return Nation.valueOf(nationAsString);
     }
 
@@ -38,10 +36,8 @@ public class BooksViews {
         authors.stream()
                 .forEach(author -> System.out.println(author));
         System.out.println("1. Find by nation (PL, ENG, USA)");//TODO zrobic dynamicznie
-        System.out.println("2. Find by after");
-        System.out.println();
-
-        System.out.println(("O. Wroc"));
+        System.out.println("2. Find by after birthYear");
+        System.out.println("O. Wroc");
 
         return getDecision();
     }

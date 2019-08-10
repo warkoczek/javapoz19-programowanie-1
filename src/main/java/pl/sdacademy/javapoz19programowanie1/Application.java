@@ -1,6 +1,7 @@
 package pl.sdacademy.javapoz19programowanie1;
 
 import pl.sdacademy.javapoz19programowanie1.books.Author;
+import pl.sdacademy.javapoz19programowanie1.books.Nation;
 
 import java.util.*;
 
@@ -23,10 +24,13 @@ public class Application {
                 new Author("William", "Shakespeare", 1564, Nation.ENG));
 
         /* List<Author> authors = Arrays.asList(author, author1, author2);*/
-
+        System.out.println("Show by Nation: ");
         showByNation(authors, Nation.PL);
+        System.out.println(("Show Modern Authors"));
         showModernAuthors(authors);
+        System.out.println("Show by Nation Birth Year");
         showByNationBirthYear(authors, Nation.PL, 1800);
+        System.out.println("Group by Nation");
         System.out.println(groupByNation(authors));
         //showByNation(authors, Nation.PL)
         //showModernAuthors(authors)
