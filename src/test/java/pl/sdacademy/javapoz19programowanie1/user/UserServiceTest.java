@@ -1,4 +1,4 @@
-package pl.sdaacademy.javapoz19programowanie1.user;
+package pl.sdacademy.javapoz19programowanie1.user;
 
 import org.junit.Assert;
 import org.junit.Test;

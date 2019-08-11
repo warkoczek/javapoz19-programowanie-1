@@ -40,6 +40,12 @@ public class BooksStart {
                     Nation nation = views.getNation();
                     authors = authorsRepository.findByNation(nation);
                     break;
+                case 2://findByAfterBirthYear, nowa metoda w widoku getBirthYear
+                    //1.getBirthYear z views
+                    //2. Ser authors na nowa liste ktora trzeba zaimplementowac w repository authorsRepository.findByAfterBirthYear(birthYear)
+                    int birthYear = views.getBirthYear();
+                    authors = authorsRepository.findByAfterBirthYear(birthYear);
+                    break;
                 default:
                     flag = false;
             }

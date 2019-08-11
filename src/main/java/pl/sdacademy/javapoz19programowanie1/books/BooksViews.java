@@ -32,6 +32,12 @@ public class BooksViews {
         return menu;
     }
 
+    public int getBirthYear(){
+        int birthYear = scanner.nextInt();
+        scanner.nextLine();
+        return birthYear;
+    }
+
     public int authorsMenu(List<Author> authors){
         authors.stream()
                 .forEach(author -> System.out.println(author));
