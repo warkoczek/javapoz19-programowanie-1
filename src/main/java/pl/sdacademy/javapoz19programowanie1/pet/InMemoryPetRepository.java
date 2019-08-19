@@ -10,9 +10,11 @@ public class InMemoryPetRepository implements PetRepository{
     InMemoryPetRepository(List<Pet> pets){
         this.pets=pets;
     }
+
     public InMemoryPetRepository(){
         this.init();
     }
+
     public void init(){
         this.pets = Arrays.asList(
         new Pet("Frieda",3,"Scottish Terrier","Lisco, Alabama"),
