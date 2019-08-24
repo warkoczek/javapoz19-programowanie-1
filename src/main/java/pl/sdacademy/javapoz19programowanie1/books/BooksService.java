@@ -26,7 +26,5 @@ public class BooksService {
         return booksRepository.searchByAuthor(authorPhrase);
     }
 
-    public List<Book> searchByThickness(int pages){
-        return booksRepository.searchByThickness(pages);
-    }
+
 }

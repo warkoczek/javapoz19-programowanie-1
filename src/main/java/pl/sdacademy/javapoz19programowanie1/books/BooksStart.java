@@ -72,10 +72,7 @@ public class BooksStart {
                     String authorPhrase = views.getPhrase();
                     books = booksService.searchByAuthor(authorPhrase);
                     break;
-                case 4:
-                    int pages = views.getPagesNum();
-                    books = booksService.searchByThickness(pages);
-                    break;
+
                 default:
                     flag = false;
             }

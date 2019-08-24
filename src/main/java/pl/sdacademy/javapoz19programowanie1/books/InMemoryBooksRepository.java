@@ -61,12 +61,7 @@ public class InMemoryBooksRepository implements BooksRepository {
         return searchByPhraseIn(authorPhrase, book -> book.getAuthor().getFullName());
     }
 
-    @Override
-    public List<Book> searchByThickness(int pages) {
-        return books.stream()
-                .filter(book -> book.getPages()>pages)
-                .collect(Collectors.toList());
-    }
+
 
     private List<Book> searchByPhraseIn(String phrase, Function<Book, String> selector){
             String lowerCasePhrase = phrase.toLowerCase();

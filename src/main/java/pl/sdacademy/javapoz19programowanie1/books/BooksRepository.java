@@ -9,5 +9,5 @@ public interface BooksRepository {
     List<Book> searchByAuthor(String authorPhrase);
 
 
-    List<Book> searchByThickness(int pages);
+
 }
